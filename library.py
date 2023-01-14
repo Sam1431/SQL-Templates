@@ -17,7 +17,7 @@ def register():
             mid = input("Enter member ID : ")
             Id.append(mid)
 
-            bname = int(input("Enter name of the Book : "))
+            bname = input("Enter name of the Book : ")
             Bname.append(bname)
 
             dur = input("Enter duration for Borrowing : ")
