@@ -1,0 +1,8 @@
+airlinereg.py
+mobrent.py
+railwayreg.py
+library.py
+pharmacy.py
+hotelmgmt.py
+studentresult.py
+billmgmt.py
