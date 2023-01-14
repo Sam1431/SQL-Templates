@@ -28,7 +28,7 @@ def register():
         
         dict = {
             "Sno": Sno,
-            "Medicine Name": Name,
+            "Medicine Name": DrugName,
             "Description": Desc,
             "Dosage": Dose,
             "Quantity": Qty,
