@@ -1,44 +1,44 @@
 def register():
         Sno = []
-        Name = []
-        Id = []
-        Bookname = []
-        Duration = []
-        Amt = []
+        DrugName = []
+        Desc = []
+        Dose = []
+        Qty = []
+        Cost = []
 
         entries = int(input("Total Entries : "))
         for x in range(entries):
-            sno = int(input("Enter serial number : "))
+            sno = int(input("S.no number : "))
             Sno.append(sno)
 
-            name = input("Enter member name  : ")
-            Name.append(name)
+            drugname = input("Medicine name : ")
+            DrugName.append(drugname)
+                
+            desc = input("Medicine Desciption : ")
+            Desc.append(desc)
 
-            mid = input("Enter member ID : ")
-            Id.append(mid)
+            dose = input("For how much days is the medicin prescribed for : ")
+            Dose.append(dose)
 
-            bname = input("Enter name of the Book : ")
-            Bname.append(bname)
+            qty = input("Quantity : ")
+            Qty.append(bname)
 
-            dur = input("Enter duration for Borrowing : ")
-            Duration.append(dur)
-
-            amt = input("Enter amount : ")
-            Amt.append(amt)
+            cost = input("Price : ")
+            Cost.append(cost)
         
         dict = {
             "Sno": Sno,
-            "Name": Name,
-            "ID": Id,
-            "Book name": Bname,
-            "Duration": Duration,
-            "Amount": Tclass,
+            "Medicine Name": Name,
+            "Description": Desc,
+            "Dosage": Dose,
+            "Quantity": Qty,
+            "Cost": Cost,
         }
         phrdf = pd.DataFrame(dict)
         print(phrdf, "\n")
         save = input("Would You like to save : ")
         if save == "y" or "Y":
-            fil_name = input("Enter File Name : ")
+            fil_name = input("Enter Patient Name : ")
             phrdf.to_csv("csv/" + fil_name + ".csv")
         else:
             print("Not Saving")
