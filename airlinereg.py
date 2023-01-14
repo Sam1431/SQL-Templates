@@ -125,7 +125,7 @@ def register():
         save = input("Would You like to save")
         if save == "y" or "Y":
             fil_name = input("Enter File Name")
-            airdf.to_csv("csv/airway/" + fil_name + ".csv")
+            airdf.to_csv("csv/" + fil_name + ".csv")
         else:
             print("Not Saving")
 
