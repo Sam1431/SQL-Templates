@@ -21,7 +21,7 @@ def register():
             Dose.append(dose)
 
             qty = input("Quantity : ")
-            Qty.append(bname)
+            Qty.append(qty)
 
             cost = input("Price : ")
             Cost.append(cost)
