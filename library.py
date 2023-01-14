@@ -39,6 +39,6 @@ def register():
         save = input("Would You like to save : ")
         if save == "y" or "Y":
             fil_name = input("Enter File Name : ")
-            libdf.to_csv("csv/railway/" + fil_name + ".csv")
+            libdf.to_csv("csv/" + fil_name + ".csv")
         else:
             print("Not Saving")
